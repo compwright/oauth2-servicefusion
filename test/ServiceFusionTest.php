@@ -135,7 +135,7 @@ class ServiceFusionTest extends TestCase
 
         /** @var MockObject&ResponseInterface */
         $response = $this->createStub(ResponseInterface::class);
-        $response->method('getBody')->willReturn('{"error":"invalid_client","error_description":"Invalid client`s id or secret."}');
+        $response->method('getBody')->willReturn('[{"error":"invalid_client","error_description":"Invalid client`s id or secret."}]');
         $response->method('getHeader')->willReturn(['content-type' => 'json']);
         $response->method('getStatusCode')->willReturn(400);
 

@@ -39,6 +39,10 @@ class Provider extends AbstractProvider
      */
     protected function checkResponse(ResponseInterface $response, $data): void
     {
+        if ($response->getStatusCode() >= 400) {
+            $data = $data[0];
+        }
+
         if (isset($data['type']) && $data['type'] === 'error') {
             throw new IdentityProviderException(
                 $data['message'],
