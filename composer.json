@@ -19,6 +19,9 @@
         "fusion",
         "provider"
     ],
+    "bin": [
+        "bin/servicefusion-client-credentials"
+    ],
     "require": {
         "php": "^7.4 || ^8",
         "league/oauth2-client": "^2.5",
