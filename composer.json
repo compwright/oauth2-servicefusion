@@ -1,6 +1,6 @@
 {
     "name": "compwright/oauth2-servicefusion",
-    "description": "Housecall Pro OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+    "description": "ServiceFusion OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
     "license": "MIT",
     "authors": [
         {
